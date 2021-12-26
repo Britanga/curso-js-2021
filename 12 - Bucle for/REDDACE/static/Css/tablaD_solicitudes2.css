@@ -1,0 +1,110 @@
+div.elcontenido {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 60px 430px 60px;
+    grid-template-areas: " donde"
+                        " tables" 
+                        " lista";
+    justify-content: center;
+}
+h3{
+    color: whitesmoke;
+    font-family: ROBOTO;
+}
+p{
+    margin-bottom: 0 !important;
+}
+.TRCparte1{
+    grid-area: donde;
+    border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+}
+.TRCparte2{
+    grid-area: lista;
+}
+.TRCparte1, .TRCparte2{
+    font-family: PoppinsR;
+    font-weight: 100;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+
+box-shadow: 0px 0px 1px 10px #32445b;
+
+}
+.TRCparte1 > input{
+border: none;
+background-color: #F0F0F0;
+text-align: end;
+padding-right: 20px;
+border-top-right-radius: 15px;
+}   
+.TRCparte1 > h3{
+    color: #70706D;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 15px;
+    font-size: 16px;
+    text-align: center;
+    padding-left:7px; 
+    }  
+
+.TRCparte3{
+    grid-area: tables;
+    box-shadow: 0px 0px -1px 10px #496185;
+}
+
+
+
+.TRCparte3{
+    
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 200px;
+    grid-template-areas: "dondes "
+                         "tables";
+   
+   
+}
+div.scrol{
+    overflow-y: scroll;
+    background-color: #fff;
+    width: 100%;
+    height: 430px;
+    /* border-top: solid 10px #32445b; */
+    /* border-bottom: solid 10px #32445b; */
+    box-shadow: 0px 0px 10px 0px #32445b, 
+                /* 10px 10px 0px #32445b, */
+                0px 0px  0px 10px #32445b
+}
+
+table{
+    width: 100%;
+}
+td{
+    border: solid 1px #000;
+}
+
+table, th, td{
+    text-transform: capitalize;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    position: sticky;
+    top: 0;
+    background-color: #32445b;
+    color: white;
+}
+tr th:nth-child(1){
+width: 43px;
+text-align: center;
+background-color: #496185;
+}
+tr td:nth-child(1){
+color: white;
+text-align: center;
+background-color: #32445b;
+}

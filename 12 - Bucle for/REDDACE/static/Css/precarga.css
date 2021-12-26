@@ -1,0 +1,51 @@
+
+body{
+overflow: hidden;
+height: 100vh;
+}
+
+.bonito {
+    height: 100%;
+    width: 100%;
+    background-color: #eeeeee;
+    position: absolute; 
+    opacity: 0.4;
+    z-index: -1;
+}
+.bonito1{
+    width: 100%;
+}
+.bonito2{
+    width: 100%;
+}
+
+
+
+
+
+
+.cotePreloader {
+    height: 100%;
+    width: 100%;
+    background-color: #eeeeee;
+    position: absolute; 
+    animation: preloader 5s forwards ease;
+}
+.preloader{
+    width: 100%;
+}
+.preloader12{
+    width: 100%;
+}
+@keyframes preloader{
+0% {
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+100% {
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+}

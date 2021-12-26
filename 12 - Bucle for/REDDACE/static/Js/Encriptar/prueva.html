@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="prueva1">
+        <input type="text" name="userr1">
+        <input type="text" name="ssap1">
+        <input type="hidden" name="pass2" id="pass2" value="21514577">
+        <input type="button" id="envio1">
+    </form>
+   
+        <p id="codigo"> </p>
+     
+</body>
+<script src="../jquery-3.4.1.min.js"></script>
+<script src="encriptar.js"></script>
+<script src="desincriptar.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+      $('#envio1').click(function(){ 
+      var datos=$('#prueva1').serializeArray();
+
+            var pass=datos[0].value;  
+                        // if (pass.length <=4 || pass.length >= 9 ) {
+                        // swal ( "Disculpe" ,  "Su contraseña debe de ser Mayor a 4 y Menor a 10" ,  "warning" );
+                        // return false;
+                        // };
+                        var codigo = new encriptado();
+                        var oscar = codigo.comoEncriptar(datos[1].value);
+                        datos[1].value = oscar;
+                        
+                         //  prueva
+                        // var codigo2 = new desincriptar();
+                        // var envio = codigo2.comoDesincriptar(datos[1].value);
+                        // var codigo3 = document.getElementById('codigo');
+                        // codigo3.value = envio;
+                        console.log(datos);
+            $.ajax({   
+            	type:"POST",
+            	url:"pruevaDesincritando.php", //listo ya datos esta Eliminado
+            	data:datos,
+            	success:function(res1){
+                    //    if (res1 == true) {
+                    //     // window.location.assign("login.php");                             
+                    //    } else{
+                    //     // window.location.assign("login.php");
+                    //    }
+                   var codigo3 = document.getElementById('codigo');
+                        codigo3.innerHTML=res1;
+                        console.log(res1);
+
+            	}
+            });
+
+            return false;
+      });
+});
+</script>
+</html>

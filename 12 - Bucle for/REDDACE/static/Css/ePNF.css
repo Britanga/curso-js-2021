@@ -1,0 +1,76 @@
+#ePNF{
+    display: grid;
+    /* 500h y 550w */
+    grid-template-columns: 100%;
+    grid-template-rows: 41px 225px 232px;
+    grid-template-areas: "donde" 
+                         "editar" 
+                         "verMateria";
+   }
+   div.scrol{
+    overflow-y: hidden !important;
+   }
+.titwl{
+    grid-area: donde;
+}
+form#e_PNF{
+    grid-area: editar;
+}
+.tavla{
+    grid-area: verMateria;
+}
+
+.titwl
+{
+    text-align: center;
+    font-family: ROBOTO;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.titwl > h3
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+form#e_PNF
+{
+    background-color: rgb(255, 254, 253);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 56px) 40px;
+    grid-template-areas: "pNF dura"
+                         "tit est"
+                         "buton2 buton2";
+    gap: 10px;
+    padding: 30px 20px 0px 20px;
+
+}
+.robo{
+    margin-top: 0;
+}.OPC1parte6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    align-self: center;
+    justify-self: center;
+    }
+     
+.OPC1parte0{grid-area:pNF ;
+    align-self: unset;
+    justify-self: normal;
+    width: auto;}
+.OPC1parte1{grid-area:dura ;}
+.OPC1parte2{grid-area:tit ;}
+.OPC1parte3{grid-area:est ;}
+.OPC1parte5{grid-area:buton1 ;}
+.OPC1parte6{grid-area:buton2 ;}
+/* .tavla{
+    grid-area: verMateria;
+} */

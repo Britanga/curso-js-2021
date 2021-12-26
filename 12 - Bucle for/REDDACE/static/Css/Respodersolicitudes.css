@@ -1,0 +1,113 @@
+div.elcontenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 500px;
+    grid-template-areas: "donde"
+                        "tables" ;
+    justify-content: center;
+
+}
+h3{
+    color: whitesmoke;
+    font-family: ROBOTO;
+}
+p{
+    margin-bottom: 0 !important;
+}
+.TRCparte1{
+    grid-area: donde;
+    font-family: PoppinsR;
+    font-weight: 100;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+box-shadow: 0px 0px 1px 10px #32445b;
+}
+.TRCparte1 > input{
+    border: none;
+    background-color: #F0F0F0;
+    text-align: end;
+    padding-right: 20px;
+    border-top-right-radius: 15px;
+    }   
+    .TRCparte1 > h3{
+        color: #70706D;
+        font-family: Arial;
+        display: flex;
+        align-items: center;
+        border-top-left-radius: 15px;
+        } 
+.TRCparte3{
+    grid-area: tables;
+    box-shadow: 0px 0px -1px 10px #496185;
+}
+
+.TRCparte3{
+    
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 200px;
+    grid-template-areas: "dondes "
+                         "tables";
+   
+  
+}
+div.scrol{
+    overflow-y: scroll;
+    background-color: #fff;
+    width: 100%;
+    height: 500px;
+    /* border-top: solid 10px #32445b; */
+    /* border-bottom: solid 10px #32445b; */
+    box-shadow: 0px 0px 10px 0px #32445b, 
+                /* 10px 10px 0px #32445b, */
+                0px 0px  0px 10px #32445b
+}
+
+table{
+    width: 100%;
+}
+table, th, td{
+    /* border: 1px solid #32445b; */
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    position: sticky;
+    top: 0;
+    background-color: #32445b;
+    color: white;
+}
+tr th:nth-child(1){
+width: 60px;
+text-align: center;
+background-color: #496185;
+}
+tr td:nth-child(1){
+color: white;
+text-align: center;
+background-color: #32445b;
+}
+textarea{
+    max-height: 52px;
+    min-height: 52px;
+}
+
+#quemmd{
+    color: #32445b; 
+    width: 50px; 
+    background-color: #2196f3;
+    border: none;
+    border-radius: 5rem;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: all 0.3s ease;
+
+}
+#quemmd:hover{
+    background-color: #219003;
+    color: #F0F0F0;
+}

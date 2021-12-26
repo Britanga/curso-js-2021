@@ -1,0 +1,61 @@
+
+@font-face {font-family:Roboto;src:url(../Fonts/Roboto-Bold.ttf);}
+
+.fracaso_login{
+        color: rgb(255, 0, 0);
+        font-family: Roboto;
+        font-size: 15px;
+        background-color: white; 
+        margin-bottom: 0;
+        
+
+		-webkit-animation: visile 1s forwards ,invisile 3.5s forwards 6.5s;
+		-mos-animation: visile 1s forwards ,invisile 3.5s forwards 6.5s;
+		-o-animation: visile 1s forwards ,invisile 3.5s forwards 6.5s;
+		 animation: visile 1s forwards ,invisile 3.5s forwards 6.5s; 
+    }
+
+.exito,.exito1{
+        font-family: Roboto;
+        font-size: 15px;
+        color: rgb(0, 255, 0);
+        
+        
+		-webkit-animation: visile 1s forwards ,invisile 3.5s forwards 6.5s;
+		-mos-animation: visile 1s forwards ,invisile 3.5s forwards 6.5s;
+		-o-animation: visile 1s forwards ,invisile 3.5s forwards 6.5s;
+		 animation: visile 1s forwards ,invisile 3.5s forwards 6.5s;
+        
+        }
+
+.exito{
+        background-color: rgba(146, 123, 123, 0.548);
+        }
+.exito1{
+        background-color: #14A9BE;
+        color: rgb(255, 255, 255);
+        }
+@keyframes visile 
+{
+from{
+    opacity: 0;
+    }
+to  {
+    opacity: 1; 
+    }
+}
+@keyframes invisile 
+{
+from{
+    opacity: 1;
+    }
+to  {
+    opacity: 0;
+    }
+}
+
+p#relleno
+{
+margin-top: 5px;
+font-size: 15px;
+}

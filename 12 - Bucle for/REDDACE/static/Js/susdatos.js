@@ -1,0 +1,84 @@
+  
+  $(document).ready(function(){
+    var datos=[];
+        datos[0] = document.getElementById('como');  // ojo aux
+        datos[1] = document.getElementById('como1'); // ojo aux
+         
+//  
+//  
+   $("#Trayecto1").click(function(){  
+                  $("#Trayecto1-1").addClass('activos1');
+$("#Trayecto2-2").removeClass('activos2');
+$("#Trayecto3-3").removeClass('activos3');
+$("#Trayecto4-4").removeClass('activos4');
+$("#Trayecto4-5").removeClass('activos5');
+                            $.ajax({   
+                                type:"POST",
+                                url:"susdatos.php",
+                                data:datos,
+                                success:function(res1){
+                                $('#comunicasion1').html(res1);
+                                }
+                            }); 
+   });
+   $("#Trayecto2").click(function(){  
+             $("#Trayecto2-2").addClass('activos2');
+$("#Trayecto1-1").removeClass('activos1');
+$("#Trayecto3-3").removeClass('activos3');
+$("#Trayecto4-4").removeClass('activos4');
+$("#Trayecto4-5").removeClass('activos5');
+                            $.ajax({   
+                                type:"POST",
+                                url:"sudireccion.php",  
+                                data:datos,
+                                success:function(res1){
+                                $('#comunicasion1').html(res1);
+                                }
+                            });
+   });
+   $("#Trayecto3").click(function(){  
+              $("#Trayecto3-3").addClass('activos3');
+$("#Trayecto1-1").removeClass('activos1');
+$("#Trayecto2-2").removeClass('activos2');
+$("#Trayecto4-4").removeClass('activos4');
+$("#Trayecto4-5").removeClass('activos5');
+                            $.ajax({   
+                                type:"POST",
+                                url:"sucontra.php",
+                                data:datos, 
+                                success:function(res1){
+                                    $('#comunicasion1').html(res1);
+                                }
+                            });
+   });
+   $("#Trayecto4").click(function(){  
+                  $("#Trayecto4-4").addClass('activos4');
+$("#Trayecto1-1").removeClass('activos1');
+$("#Trayecto2-2").removeClass('activos2');
+$("#Trayecto3-3").removeClass('activos3');
+$("#Trayecto4-5").removeClass('activos5');
+                            $.ajax({   
+                                type:"POST",
+                                url:"suspreguntas.php",  
+                                data:datos,
+                                success:function(res1){
+                                    $('#comunicasion1').html(res1);
+                                }
+                            });
+   });  
+   $("#Trayecto5").click(function(){  
+                  $("#Trayecto4-5").addClass('activos5');
+$("#Trayecto1-1").removeClass('activos1');
+$("#Trayecto2-2").removeClass('activos2');
+$("#Trayecto3-3").removeClass('activos3');
+$("#Trayecto4-4").removeClass('activos4');
+              $.ajax({   
+                  type:"POST",
+                  url:"suscomunicasion.php",  
+                  data:datos,
+                  success:function(res1){
+                      $('#comunicasion1').html(res1);
+                  }
+              });
+}); 
+});

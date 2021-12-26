@@ -1,0 +1,45 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importar CSS's -->
+    <!-- <link rel="stylesheet" href="css/styles-dist.css"> -->
+    <title>Forms I</title>
+</head>
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <h1 id="title">Forms I</h1>
+    <form action="/google.es" method="post" class="form" id="form">
+      <div class="form__field">
+        <label for="name" class="form__label">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="form__field">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div id="gender" class="form__field">
+        <label for=" male">Male</label>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Female</label>
+        <input type="radio" name="gender" value="female">
+      </div>
+      <div class="form__field">
+        <label for="terms">I accept the terms and conditions</label>
+        <input type="checkbox" name="terms" id="terms">
+      </div>
+      <button id="submitButton" disabled>Send</button> <!-- No colocar nunca el id="submit" tiene q ser aunque sea un poco diferente xq da error-->
+    </form>
+
+    <!-- Para tener acceso directo a la consola y q se vaya compilando en tiempo real -->
+    <script src="scripts.js"></script>
+</body>
+</html>

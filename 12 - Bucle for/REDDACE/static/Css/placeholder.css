@@ -1,0 +1,73 @@
+.estoes::placeholder      {  transition: opacity 1s, font-size 1s;}
+.estoes:focus::placeholder{  opacity: 0;font-size: 48px;}
+
+input.estoes {text-transform:capitalize;}
+
+.otrass{
+    /* color:#03A9F4; */
+    font-weight: 900;
+}.otrass:hover{
+    transition: all 0.4s;
+    color:#000;
+}
+.colorr{
+    color: #000 !important
+    ;
+}
+.opacitys{
+opacity: 1;
+visibility: hidden;
+}
+.eliminar12{
+    display: none;
+}
+
+@keyframes bonito{
+    0%{
+        background-position:  0 0;
+    }
+    100%{
+        background-position: 0 -64px;
+    }
+}
+input:required,
+select:required{
+    background-image: url(../Img/medico.png);
+
+}
+select:required{
+    -webkit-appearance: button;
+    appearance: none;
+    outline: none;
+}
+
+input:valid,
+select:valid{
+    background-image: url(../Img/comprobado.png);
+    
+}
+select:valid{
+  
+    outline: none;
+}
+
+input:required,
+input:valid{
+    background-position-x: 99%;   
+    background-position-y: 50%;   
+}
+select:required,
+select:valid{
+    background-position-x: 89%;   
+    background-position-y: 50%;   
+
+}
+input:required,
+input:valid,
+select:required,
+select:valid{
+    background-size: 6%;
+    background-repeat: no-repeat;
+    
+}
+

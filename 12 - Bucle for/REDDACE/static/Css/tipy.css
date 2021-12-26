@@ -1,0 +1,41 @@
+/* Subtle shift-away animation */
+
+/* Top */
+.tippy-tooltip[x-placement^='top'][data-animation='subtle-shift-away'][data-state='visible'] {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  .tippy-tooltip[x-placement^='top'][data-animation='subtle-shift-away'][data-state='hidden'] {
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+  
+  /* Bottom */
+  .tippy-tooltip[x-placement^='bottom'][data-animation='subtle-shift-away'][data-state='visible'] {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  .tippy-tooltip[x-placement^='bottom'][data-animation='subtle-shift-away'][data-state='hidden'] {
+    transform: translateY(5px);
+    opacity: 0;
+  }
+  
+  /* Left */
+  .tippy-tooltip[x-placement^='left'][data-animation='subtle-shift-away'][data-state='visible'] {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  .tippy-tooltip[x-placement^='left'][data-animation='subtle-shift-away'][data-state='hidden'] {
+    transform: translateX(-5px);
+    opacity: 0;
+  }
+  
+  /* Right */
+  .tippy-tooltip[x-placement^='right'][data-animation='subtle-shift-away'][data-state='visible'] {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+  .tippy-tooltip[x-placement^='right'][data-animation='subtle-shift-away'][data-state='hidden'] {
+    transform: translateX(5px);
+    opacity: 0;
+  }

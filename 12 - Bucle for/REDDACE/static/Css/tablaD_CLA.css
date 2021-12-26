@@ -1,0 +1,194 @@
+div.elcontenido {
+    display: grid;
+    grid-template-columns: 260px 900px;
+    grid-template-rows: 60px 500px;
+    grid-template-areas: "donde donde"
+                        "opcion tables" ;
+    justify-content: center;
+
+}
+.CLAVparte1{
+    grid-area: donde;
+    justify-self: center;
+    align-self: center;
+    font-family: PoppinsR;
+    font-weight: 100;
+    text-align: center;
+}
+.CLAVparte2{ 
+    grid-area: opcion;
+}
+.CLAVparte3{
+    grid-area: tables;
+    box-shadow: 0px 0px -1px 10px #496185;
+}
+
+.CLAVparte2{
+    display: flex;
+    flex-flow: column nowrap;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    box-shadow: 0px 0px 0px 10px #32445b;
+}
+    div.parre{
+        background-color:rgba(254, 254, 255, 0.863);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px ;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows:   repeat(4,120px);
+        grid-template-areas:  "parteT1"
+                              "parteT2"
+                              "parteT3"
+                              "parteT4"; 
+        
+        align-content: space-around;
+    } 
+    .parteT1-CLA{
+        grid-area: parteT1;
+    }
+    .parteT2-CLA{
+        grid-area: parteT2;
+    }
+    .parteT3-CLA{
+        grid-area: parteT3;
+    }
+    .parteT4-CLA{
+        grid-area: parteT4;
+    }
+    .col-lg-3 {
+    max-width: 255px !important;
+    padding-left: 5px !important;
+    padding-right: 10px !important;
+    }
+    .small-box {
+    box-shadow: 0 0 100px 0 rgba(14, 14, 31, 0.739) inset !important;
+    cursor: pointer;
+    border-radius: .25rem;
+    position: relative;
+    }
+    .callout, .card, .info-box, .mb-3, .my-3, .small-box {
+    margin-bottom: 1rem !important;
+    }
+    .small-box > .inner {
+    padding: 10px;
+    }
+    .small-box h3 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+    }
+    .small-box h3, .small-box p {
+    z-index: 5;
+    }
+    .small-box .icon {
+    transition: all .4s linear;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 0;
+    font-size: 90px;
+    height: 100%;
+    color:#32445b;
+    }
+    .btn-primary {
+    color: #fff;
+    background-color: #32445b;
+    border-color: #32445b;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075);
+    transition: all 0.4s ease;
+    }
+    .btn-primary:hover{
+    transition: all 0.4s ease;
+    background-color:#496185 ;
+    }
+    .btn-primary:hover .icon{
+    transition: all 0.4s ease;
+    color:#496185 ;
+    }
+    .small-box:hover .icon {
+    font-size: 95px;
+    }
+    .box p {
+    z-index: 5;
+    }
+    .inner > p {
+    font-family: ROBOTO;
+    }
+    .algo {
+    color: black;
+    text-shadow: 2px 2px 2px aliceblue;
+    height: 50px;
+    overflow: hidden;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    }
+    .algo > p {
+    font-family: PoppinsR;
+    font-size: 30px;
+    margin: auto;
+    font-weight: 500;
+    }
+
+
+.CLAVparte3{
+    
+    background-image: url(../Img/b640.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 200px;
+    grid-template-areas: "dondes "
+                         "tables";
+   
+  
+}
+div.scrol{
+    overflow-y: scroll;
+    background-color: rgba(254, 254, 255, 0.863);
+    width: 100%;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px #32445b, 
+                /* 10px 10px 0px #32445b, */
+                0px 0px  0px 10px #32445b
+}
+
+table{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+table, th, td{
+    /* border: 1px solid #32445b; */
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+th{
+    position: sticky;
+    top: 0;
+    background-color: #32445b;
+    color: white;
+}
+tr th:nth-child(1){
+width: 60px;
+text-align: center;
+background-color: #496185;
+}
+tr td:nth-child(1){
+color: white;
+text-align: center;
+background-color: #32445b;
+}
+tr:hover{
+    transition: all 0.3s ease;
+    background-color: #30303148;
+    cursor: pointer;
+}
+    

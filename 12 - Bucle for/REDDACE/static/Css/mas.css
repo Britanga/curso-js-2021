@@ -1,0 +1,59 @@
+#mPNF,#mMTR{
+    display: grid;
+    /* 500h y 550w */
+    grid-template-columns: 100%;
+    grid-template-rows: 41px 1fr;
+    grid-template-areas: "donde" 
+                         "forr";
+    }
+    .titwl
+    {
+        text-align: center;
+        font-family: ROBOTO;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .titwl > h3
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+form#Mas_PNF{
+    background-color: rgb(255, 254, 253);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 56px);
+    grid-template-areas: "pNF dura"
+                         "tit buton2";
+    gap: 10px;
+    padding: 30px 20px 0px 20px;
+}
+form#Mas_MTR{
+    background-color: rgb(255, 254, 253);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 56px);
+    grid-template-areas: "pNF trayecto"
+                         "fase codigo"
+                         "nombre buton4";
+    gap: 10px;
+    padding: 30px 20px 0px 20px;
+}
+.OPC1parte6{
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+justify-items: center;
+align-self: center;
+justify-self: center;
+}
+ 
+table, th, td {
+    border-bottom: none !important;
+}

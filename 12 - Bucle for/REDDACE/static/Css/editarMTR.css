@@ -1,0 +1,77 @@
+div.scrol {
+    overflow-y: hidden;
+}
+#eMTR{
+    display: grid;
+    /* 500h y 550w */
+    grid-template-columns: 100%;
+    grid-template-rows: 41px 170px 41px 200px;
+    grid-template-areas: "buscar" 
+                         "forr1"
+                         "editar"
+                         "forr2";
+                         overflow: hidden;
+                         gap: 5px;
+    }
+    .titwl
+    {
+        text-align: center;
+        font-family: ROBOTO;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .titwl > h3
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+form#editar1_MTR{
+    grid-area: forr1;
+    background-color: rgb(255, 254, 253);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 56px);
+    grid-template-areas: "pNF trayecto"
+                         "face codigo";
+    gap: 10px;
+    padding: 30px 20px 0px 20px;
+}
+.OPC1parte0{ grid-area: pNF      ;}
+.OPC1parte1{ grid-area: trayecto ;}
+.OPC1parte2{ grid-area: face     ;}
+.OPC1parte3{ grid-area: codigo   ;}
+form#editar2_MTR{
+    grid-area: forr2;
+    background-color: rgb(255, 254, 253);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 56px) 41px;
+    grid-template-areas: "estado nombre"
+                         "trayecto fase"
+                         "buton4 buton4";
+    gap: 10px;
+    padding: 20px 20px 0px 20px;
+}
+.OPC1parte4{ grid-area: estado   ;}
+.OPC1parte5{ grid-area: nombre   ;}
+.OPC1parte6{ grid-area: trayecto ;}
+.OPC1parte7{ grid-area: fase     ;}
+.OPC1parte8{
+grid-area:buton4 ;
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+justify-items: center;
+align-self: center;
+justify-self: center;
+}
+ 
+table, th, td {
+    border-bottom: none !important;
+}

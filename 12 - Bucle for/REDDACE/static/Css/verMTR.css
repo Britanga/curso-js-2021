@@ -1,0 +1,39 @@
+div.scrol {
+    overflow-y: hidden;
+}
+div.scrol2 {
+    overflow-y: scroll;
+}
+#vMTR{
+    display: grid;
+    /* 500h y 550w */
+    grid-template-columns: 100%;
+    grid-template-rows: 41px 53px 41px 350px;
+    grid-template-areas: "buscar" 
+                         "forr1"
+                         "editar"
+                         "forr2";
+                         overflow: hidden;
+                         gap: 5px;
+    }
+    .titwl
+    {
+        text-align: center;
+        font-family: ROBOTO;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .titwl > h3
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+#ver_MTR > .OPC1parte0 {
+    width: 40%;
+} 

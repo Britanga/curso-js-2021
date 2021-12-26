@@ -1,0 +1,30 @@
+<!-- Establece el tipo de estandar del documento (HTML5) -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML -->
+<html lang="es">
+
+<!-- Datos que le pasamos al navegador con información de nuestra página web -->
+<head>
+    <meta charset="UTF-8"> <!--Para poder usar los acentos y la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importar CSS's -->
+    <link rel="stylesheet" href="styles.css">
+    <title>API file II</title>
+</head>
+
+<!-- Representa todo el contenido de nuestra página web -->
+<body>
+    <input type="file" id="file" multiple>
+    <!-- Loader 2 elements -->
+    <div id="load-bar" class="load-bar">
+      <span id="progress" class="progress"></span>
+    </div>
+    <!-- Loader 1 element -->
+    <div id="load-bar" class="load-bar"></div>
+    
+    <!-- Para tener acceso directo a la consola y q se vaya compilando en tiempo real -->
+    <script src="scripts.js"></script>
+</body>
+</html>

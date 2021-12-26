@@ -1,0 +1,130 @@
+
+div#nuebe18 {
+    display: grid;
+    grid-template-columns: 200px 500px;
+    grid-template-rows: 60px 250px;
+    grid-template-areas: "donde donde"
+                        "opcion tables" ;
+                        justify-content: center
+
+}
+.TRMparte1{
+    grid-area: donde;
+    justify-self: center;
+    align-self: center;
+    font-family: PoppinsR;
+    font-weight: 100;
+    text-align: center;
+}
+.TRMparte2{
+    grid-area: opcion;
+}
+.TRMparte3{
+    grid-area: tables;
+    box-shadow: 0px 0px -1px 10px #496185;
+}
+
+.TRMparte2{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    box-shadow: 0px 0px 0px 10px #32445b;
+    background-image: url(../Img/b640.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+} 
+div.parre1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    background-color:rgba(254, 254, 255, 0.863);
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+} 
+
+
+.TRMparte3{
+    display: grid;
+    grid-template-rows:50px 150px 50px;
+    grid-template-areas: "dondeQ"
+                         "medioQ"
+                         "chaoQ";
+                         overflow: hidden;
+}
+.dondeQ{
+background-color: #32445b;
+grid-area:  dondeQ;
+text-align: center;
+margin: 0;padding: 0;
+font-family: ROBOTO;
+color: #fff;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.medioQ{
+    background-color: azure;
+    grid-area: medioQ;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-areas: "lado1 lado2";
+
+} 
+.lado1{
+grid-area: lado1;
+padding: 14px;
+display: grid;
+gap: 6px;
+}
+.lado2{
+grid-area: lado2;
+padding: 14px;
+display: grid;
+gap: 6px;
+}
+.paradonde >div p{
+    color: #000;
+    font-family:  ROBOTO;
+    text-align: center;
+    margin: 0;
+}
+.parre >div select{
+    color: rgba(88, 85, 85, 0.904);
+    font-family:  ROBOTO;
+    width: 100% !important;
+}
+.chaoQ{
+    background-color: #32445b;
+    grid-area:  chaoQ;
+    text-align: center;
+    margin: 0;padding: 0;
+    font-family: ROBOTO;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+.chaoQ >h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.chaoQ >h3 input{
+    background-color: transparent;
+    border:  none;
+    color:  #FFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.chaoQ >h3 input:hover{
+    background-color: aliceblue;
+    color: #000;
+    border-radius:  15px;
+    box-shadow: 0px  0px  20px 1px grey; 
+    /* transform: scale(1.08); */
+    
+}

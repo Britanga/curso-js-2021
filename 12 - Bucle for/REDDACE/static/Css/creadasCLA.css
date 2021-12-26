@@ -1,0 +1,56 @@
+.img_pri {
+    /* background-image: url(../Img/b1280.png); */
+    background-color: rgba(240, 248, 255, 0.37);
+    height: 100%;
+}
+/* suis */
+.col-lg-3 {
+    max-width: 255px !important;
+    padding-left: 5px !important;
+    padding-right: 10px !important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #32445b;
+    border-color: #32445b;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075);
+    transition: all 0.4s ease;
+}
+.small-box {
+    box-shadow: 0 0 100px 0 rgba(14, 14, 31, 0.739) inset !important;
+    cursor: pointer;
+    border-radius: .25rem;
+    position: relative;
+}
+.small-box > .inner {
+    padding: 10px;
+}
+.small-box h3, .small-box p {
+    z-index: 5;
+}
+.small-box h3 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+}
+.inner > p {
+    font-family: ROBOTO;
+}
+.small-box h3, .small-box p {
+    z-index: 5;
+}
+.small-box .icon {
+    transition: all .4s linear;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 0;
+    font-size: 90px;
+    height: 100%;
+    color: #32445b;
+}
+
+
+

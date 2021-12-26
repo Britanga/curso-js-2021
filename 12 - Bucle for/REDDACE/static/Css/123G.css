@@ -1,0 +1,113 @@
+.elcontenido{
+    width: 98%;
+    padding-bottom: 0 !important;
+   }
+   .parre2{
+       height: 100%;
+       display: grid;
+       grid-template-columns: repeat(3,1fr );
+       grid-template-rows: 90px 500px;
+       grid-template-areas: "buscar buscar buscar"
+                            "conter conter conter"    ;
+   }
+   .que{
+       grid-area: buscar;
+       justify-self: center;
+   } 
+   .que> h3{
+       text-align: center;
+   
+   } 
+   .que> div> select{
+       max-width: 200px;
+       min-width: 200px;
+   
+   }
+   .img_pri_1 {
+       grid-area: conter;
+      
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-evenly;
+       width: 100%;
+   }
+   
+   /* suis */
+   .col-lg-2 {
+       max-width: 250px !important;
+       min-width: 250px !important;
+       padding-left: 0 !important;
+       padding-right: 0  !important;
+       margin: 1px;
+       margin-bottom: 15px;
+   }
+   .btn-primary {
+       color: #fff;
+       background-color: #32445b !important;
+       border-color: #32445b;
+       box-shadow: 0 1px 1px rgba(0,0,0,.075);
+       transition: all 0.4s ease;
+   }.btn-primary:hover {
+       background-color: #496185 !important;
+   }.btn-primary:hover > div.icon{
+       color: #fff;
+   }.btn-primary:selection {
+       background-color: #496185;
+   }
+   .small-box {
+       box-shadow: 0 0 100px 0 rgba(14, 14, 31, 0.739) inset !important;
+       cursor: pointer;
+       border-radius: .25rem;
+       position: relative;
+       border: #fff 2px solid;
+   }
+   .small-box > .inner {
+       padding: 10px;
+   }
+   .small-box h3, .small-box p {
+       z-index: 5;
+   }
+   .small-box h3 {
+       font-size: 38px;
+       font-weight: 700;
+       margin: 0 0 10px 0;
+       white-space: nowrap;
+       padding: 0;
+   }
+   .inner > p {
+       font-family: ROBOTO;
+   }
+   .small-box h3, .small-box p {
+       z-index: 5;
+   }
+   .small-box .icon {
+       transition: all .4s linear;
+       position: absolute;
+       top: 0px;
+       right: 10px;
+       z-index: 0;
+       font-size: 90px;
+       height: 100%;
+       color: #32445b;
+   }
+   center > p, 
+   p.pClase{
+       padding: 0 !important; 
+       margin: 0 !important
+   }
+   p.pClase{
+       background-color: #e9ecefb6; 
+       color: #000; 
+       font-family:ROBOTO;
+   }
+   div.buscardores > select,
+   div.buscardores > input{
+       border: none;
+       border-bottom-color: currentcolor;
+       border-bottom-style: none;
+   border-bottom: 2px solid #496185;
+   }
+   
+   a:hover {
+       text-decoration: none !important;
+   }

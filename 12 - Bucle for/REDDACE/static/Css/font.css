@@ -1,0 +1,18 @@
+@font-face{
+	font-family: ROBOTO;
+		/* src:url(../Fonts/Poppins-Bold.ttf); */
+		src:url(../Fonts/Poppins-Bold.ttf);
+}
+@font-face{
+	font-family: PoppinsBla;
+	src:url(../Fonts/Poppins-Black.ttf);
+} 
+@font-face{
+	font-family: PoppinsBol;
+	src:url(../Fonts/Poppins-Bold.ttf);
+} 
+
+@font-face{
+	font-family: PoppinsR;
+	src:url(../Fonts/Poppins-Regular.ttf);
+} 

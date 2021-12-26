@@ -1,0 +1,139 @@
+body{
+    background-image: url(../Img/otro5.jpg);
+    background-position: center;
+    background-size: cover;/* height: 98%; */
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    }
+
+.menu{
+    grid-area: nav;
+    min-height: 96.5vh;
+    }
+
+    .menu>  div{ 
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0px 0px 0px ;
+        }
+    #efectog{
+        color: #000000;
+        text-decoration: none;
+        list-style: none;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        }
+        #efectog:hover {
+            transform: scale(1.5);
+            }
+   #efectog >i{
+        font-size: 40px;
+        }
+        #efectog:hover i.icon-settings::before {
+            content: "\f013";
+            cursor: pointer;
+            color: #FFF;
+        }
+       
+        .menu> ul{
+            height: 87.6%;
+            width: 120px;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: start;
+            padding: 5px 0px 5px 0px;
+            
+            }       
+        .menu> ul >li {
+            list-style: none;
+            height:65px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            padding: 2px;
+            overflow: hidden;
+            transition: all 1.5s;
+            }
+        .menu> ul >li:hover {
+            transition: all 1s;
+            background-color: #bec7cf4b;
+            box-shadow: 0 0 10px #000000;
+            justify-content: start;
+            height: 220px;
+            }
+       
+
+                         /* sub-modulo  */
+            .menu> ul >li:nth-child(1):hover{height: 163px;}
+            .menu> ul >li:nth-child(2):hover{height: 131px;}
+            .menu> ul >li:nth-child(3):hover{height: 250px;}
+            .menu> ul >li:nth-child(4):hover{height: 275px;}
+                       /* sub-modulo  */
+
+        .menu> ul >li i {
+        font-size: 38px;
+        color: black;
+        border-radius: 5rem;
+            }
+        .menu> ul >li p{
+            margin: 0;
+            display: none;
+            font-family:  ROBOTO, Arial, Helvetica, sans-serif;
+            }
+        .menu> ul >li:hover{
+            cursor: pointer;
+            }
+        .menu> ul >li:hover p{
+            display: block;
+            border-bottom: solid 1px black;
+            width: 100%;
+            text-align: center;
+            }
+    /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&66*/
+     /* sub-menu 
+    /*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&66*/
+        .menu> ul >li >ul{
+            opacity: 0;
+            list-style: none;
+            padding: 2px 5px;
+            margin: 0;
+        }
+        .menu> ul >li >ul >li{
+            border-bottom: solid 2px black;
+            padding: 5px;
+            line-height: 0px;
+            text-align: justify;
+        }
+ 
+        .menu> ul >li:hover >ul{
+            opacity: 1;
+            transition: all 1.5s;
+        }
+        .menu> ul >li >ul > li > span > a{
+            color: black;
+            text-decoration: none;
+        }        
+        .menu> ul >li >ul > li:hover{
+            background-color: #496185;
+            transition: all 0.3s ease;
+            color: #FFF !important; 
+        } 
+        .menu> ul >li >ul > li:hover >span,
+        .menu> ul >li >ul > li:hover >span >a  {
+            color: #FFF !important;
+            
+        } 
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&66*/
+
+
+/* efectos */
+.menu> ul >li:hover i.icon-product-hunt::before {
+    transition: all 1.5s;
+    content: "\f1c4";
+}
+

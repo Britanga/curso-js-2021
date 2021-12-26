@@ -1,0 +1,284 @@
+#nuebe{
+    display: grid;
+    grid-template-columns:250px 250px;
+    grid-template-rows:  35px 30px 425px;
+    grid-template-areas: "solisitud      solisitud" 
+                         "carrera        carrera  " 
+                         "contenidoCat   radioBro ";
+                         justify-content: center;
+    width: 100%;
+    padding: 5px;
+    justify-self: center;
+    overflow: hidden;
+   }
+   #nuebe12{
+    display: grid;
+    grid-template-columns:250px;
+    grid-template-rows:  35px 425px;
+    grid-template-areas: "solisitud  " 
+                         "radioBro ";
+                         justify-content: center;
+    width: 100%;
+    padding: 5px;
+    justify-self: center;
+    overflow: hidden;
+   }
+    /*********fin del modelo********/
+
+#veamos{
+    grid-area: solisitud;
+    height: 35px !important;
+}
+.algo >p {
+    font-family: PoppinsR;
+    font-size: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.CSelect{
+    height: 30px;
+    grid-area: carrera;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    
+}
+
+
+    select.CSelect{
+        height: 30px;
+        border: none;
+        width: 200px;
+        background-color: #E1E1E1;
+    }
+    select{
+    cursor: pointer;
+    }
+.contenido-Cat{
+    grid-area: contenidoCat;
+}
+    .contenido-Cat > .card{
+        display: grid;
+        grid-template-rows: 150px 225px 50px;
+        grid-template-areas: "img" "text" "stats"; 
+
+        font-family: ROBOTO;
+        border-radius: 18px;
+        background-color: white;
+        text-align: center;
+        border: none !important;
+    }
+    .contenido-Cat > .card > .card-img{
+        grid-area: img;
+        background-image: url(../Img/6-1.jpg);
+        border-top-left-radius:  15px;
+        background-size: cover;
+        width: 250px;
+    }
+    .contenido-Cat > .card > .card-text{
+        grid-area: text;
+        margin: 25px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    .contenido-Cat > .card > .card-text >.date{
+        color: rgb(255, 7, 110);
+        font-size: 13px;
+    }
+    .contenido-Cat > .card > .card-text > p{
+        color: grey;
+        font-size: 15px;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+    }
+    .contenido-Cat > .card > .card-text > h2{
+        margin-top: 0px;
+        font-size: 28px;
+    }    
+    .contenido-Cat > .card > .card-stats{
+        grid-area: stats;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-bottom-left-radius: 15px;
+        /* border-bottom-right-radius: 15px; */
+        background-color: rgb(255,7, 110);
+    }
+    .contenido-Cat > .card > .card-stats >.stat{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       padding: 2px;
+       color: white;
+    }
+    .contenido-Cat > .card > .card-stats >.type{
+        font-size: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .contenido-Cat > .card > .card-stats >.value{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .contenido-Cat > .card > .card-stats >.value > sup{
+        font-size: 12px;
+    }
+     
+.radio-brose{
+    grid-area: radioBro;
+}
+#nuebe12 > .radio-brose > #nuevo_ingreso > .radio-agru{
+    grid-area: radioBro;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 100%;
+    grid-template-rows:30px 345px 50px;
+    grid-template-areas: "elH" "losR" "elE";
+    border-radius: 16px;
+}
+#nuebe12 > .radio-brose > #nuevo_ingreso > .radio-agru > h2{
+    border-radius: 16px;
+    grid-area: elH;
+    background-color: white;
+    border-top-right-radius: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seras{
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius:  16px;
+}
+#nuebe > .radio-brose > #nuevo_ingreso >.radio-agru{
+    grid-area: radioBro;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 100%;
+    grid-template-rows:30px 345px 50px;
+    grid-template-areas: "elH" "losR" "elE";
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 16px;
+}
+#nuebe > .radio-brose > #nuevo_ingreso > .radio-agru > h2{
+        grid-area: elH;
+        background-color: white;
+        border-top-right-radius: 15px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.radio-agru > .todos-requisitos{
+    grid-area: losR;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:repeat(5, 1fr);
+    
+}
+.radio-agru > input{
+    grid-area: elE;
+    border: none;
+    border-bottom-right-radius: 14px;
+    font-family: ROBOTO;
+    background-color: #E1E1E1;
+    border-top:  solid 1px black;
+}
+.radio-agru > input:hover{
+    cursor: pointer;
+    background-color: #0074D9;
+    transition: all 0.5s ease;
+    color: #FFF;
+}
+.todos-requisitos> .requisitos{
+display: grid;
+grid-template-columns:100%;
+grid-template-rows: 1fr 1fr;
+grid-template-areas: "requisito"
+                     "radio";
+                     padding: 0px 20px;
+}
+.requisitos > p{
+ grid-area: requisito;
+ margin: 0;
+ padding: 0;
+ height: 25px;
+ font-family: PoppinsR;
+}
+.requisitos > div.radi{
+    grid-area: radio;
+    height: 35px;
+    display: flex; 
+    justify-content: center;
+   }
+
+.requisitos > div.radi > input[type="radio"]{
+    display: none;
+}
+.requisitos > div.radi >label{
+    color:  #0074D9;
+    padding: 5px 5px 4px 35px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: ROBOTO;
+}
+.requisitos > div.radi >label:hover{
+    background-color: rgba(0,116,217,0.3);
+}
+.requisitos > div.radi >label:before{
+    content: '';
+    width: 17px; height: 17px;
+    display: inline-block;
+    background-color: none;
+    border: 3px solid #0074D9;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+.requisitos > div.radi > input[type="radio"]:checked + label{
+    padding: 4px 10px;
+    background-color: #0074D9;
+    border-radius: 2px;
+    color: #FFF;
+}
+.requisitos > div.radi > input[type="radio"]:checked + label.si{
+    padding: 4px 10px;
+    background-color: #0074D9;
+    border-radius: 2px;
+    color: #FFF;
+}
+
+.requisitos > div.radi > input[type="radio"]:checked + label.no{
+    padding: 4px 10px;
+    background-color: #d90000;
+    border-radius: 2px;
+    color: #FFF;
+}
+.requisitos > div.radi > input[type="radio"]:checked + label:before{
+    display: none;
+}
+
+.noinvi{
+    transition: all 0.3s ease;
+    opacity: 1;
+
+}
+.invi{
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+
+

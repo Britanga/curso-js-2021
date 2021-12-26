@@ -1,0 +1,241 @@
+div.elcontenido {
+    display: grid;
+    grid-template-columns: 150px 600px;
+    grid-template-rows: 60px 430px;
+    grid-template-areas: "done donde"
+                        "opcion tables" ;
+    justify-content: center;
+
+}
+h3{
+    color: whitesmoke;
+    font-family: ROBOTO;
+}
+p{
+    margin-bottom: 0 !important;
+}
+
+.TRCparte1{
+    grid-area: donde;
+    font-family: PoppinsR;
+    font-weight: 100;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+box-shadow: 0px 0px 1px 10px #32445b;
+}
+.scrol2{ grid-area: dondes2;}
+.scrol3{ grid-area: dondes3;}
+.iguald >input {
+    border: none;
+    background-color: #F0F0F0;
+    text-align: center;
+    z-index: 9;
+}
+.scrol3{
+    font-family: PoppinsR;
+    font-weight: 100;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+box-shadow: 0px 0px 0px 10px #32445b;
+}
+
+
+.scrol2{
+    font-family: PoppinsR;
+    font-weight: 100;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+box-shadow: 0px 0px 0px 10px #32445b;
+}
+.TRCparte1 > input{
+border: none;
+background-color: #F0F0F0;
+text-align: end;
+padding-right: 20px;
+border-top-right-radius: 15px;
+}   
+.TRCparte1 > h3{
+    color: #70706D;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 15px;
+    font-size: 16px;
+    text-align: center;
+    padding-left:7px; 
+    }  
+.TRCparte2{
+    grid-area: opcion;
+}
+.TRCparte3{
+    grid-area: tables;
+    box-shadow: 0px 0px -1px 10px #496185;
+}
+
+.TRCparte2{
+    display: flex;
+    flex-flow: column nowrap;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+    box-shadow: 0px 0px 0px 10px #32445b;
+}
+    div.parre{
+        background-color:rgba(254, 254, 255, 0.863);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px ;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 150px;
+        grid-template-rows: repeat(4,100px);
+        grid-template-areas: "parteT1" "parteT2" "parteT3" "parteT4";
+        align-content: space-around;
+        
+    } 
+    .parteTs-CLA{
+        grid-area: parteT1;
+    }
+    .parteT1-CLA{
+        grid-area: parteT1;
+    }
+    .parteT2-CLA{
+        grid-area: parteT2;
+    }
+    .parteT3-CLA{
+        grid-area: parteT3;
+    }
+    .parteT4-CLA{
+        grid-area: parteT4;
+    }
+    .col-lg-3 {
+    max-width: 255px !important;
+    padding-left: 5px !important;
+    padding-right: 10px !important;
+    }
+    .small-box {
+    box-shadow: 0 0 100px 0 rgba(14, 14, 31, 0.739) inset !important;
+    cursor: pointer;
+    border-radius: .25rem;
+    position: relative;
+    }
+   
+    .small-box > .inner {
+    padding: 10px;
+    }
+    .small-box h3 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+    }
+    .small-box h3, .small-box p {
+    z-index: 5;
+    }
+
+    .btn-primary {
+    color: #fff;
+    background-color: #32445b;
+    border-color: #32445b;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075);
+    transition: all 0.4s ease;
+    }
+    .btn-primary:hover{
+    transition: all 0.4s ease;
+    background-color:#496185 ;
+    }
+    .btn-primary:hover .icon{
+    transition: all 0.4s ease;
+    color:#496185 ;
+    }
+  
+    .box p {
+    z-index: 5;
+    }
+    .inner > p {
+    font-family: ROBOTO;
+    }
+    .algo {
+    color: black;
+    text-shadow: 2px 2px 2px aliceblue;
+    height: 50px;
+    overflow: hidden;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    }
+    .algo > p {
+    font-family: PoppinsR;
+    font-size: 30px;
+    margin: auto;
+    font-weight: 500;
+    }
+    .small-box .icon {
+        transition: all .4s linear;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        z-index: 0;
+        font-size: 68px;
+        height: 100%;
+        color:#32445b;
+        }
+        .btn-primary:hover .icon{
+            transition: all 0.4s ease;
+            color:#496185 ;
+            }
+            .small-box:hover .icon {
+            font-size: 75px;
+            }
+.TRCparte3{
+    
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 200px;
+    grid-template-areas: "dondes "
+                         "tables";
+   
+   
+}
+div.scrol{
+    overflow-y: scroll;
+    background-color: #fff;
+    width: 100%;
+    height: 430px;
+    /* border-top: solid 10px #32445b; */
+    /* border-bottom: solid 10px #32445b; */
+    box-shadow: 0px 0px 10px 0px #32445b, 
+                /* 10px 10px 0px #32445b, */
+                0px 0px  0px 10px #32445b
+}
+
+table{
+    width: 100%;
+}
+table, th, td{
+    /* border: 1px solid #32445b; */
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    position: sticky;
+    top: 0;
+    background-color: #32445b;
+    color: white;
+}
+tr th:nth-child(1){
+width: 43px;
+text-align: center;
+background-color: #496185;
+}
+tr td:nth-child(1){
+color: white;
+text-align: center;
+background-color: #32445b;
+}

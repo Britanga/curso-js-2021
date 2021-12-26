@@ -1,0 +1,106 @@
+form {
+    width: 100%;
+}
+.elcontenido {
+ 
+    background-image: url(../Img/b640.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+.parre2{
+    display: grid;
+    grid-template-columns: 60px 900px;
+    grid-template-rows: 80px 500px;
+    grid-template-areas:"que1 que1"
+                        "buto tables";
+    justify-content: center;
+    background-color: #e9ecefb6;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.que1{
+ grid-area: que1;
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+}
+.que1 > h3 ,
+.que1 > p  {
+    color: #000;
+}
+.que1 > h3 {
+display: block;
+}
+.buto{
+ grid-area: buto;
+}
+
+.buto{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+   }
+   .buto > i{
+       height: 41.5px;
+    width: 100%;
+    font-size: 39px;
+    font-family: ROBOTO;
+    color: #FFF;
+    background-color: #32445b;
+    transition: all 0.3s ease;
+    margin-top: 2px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   }
+   .buto> i:hover{
+       background-color: #496185;
+       cursor: pointer;
+   }
+div.scrol {
+    grid-area: tables;
+    overflow-y: scroll;
+    background-color: rgba(254, 254, 255, 0.637);
+    width: 100%;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px #32445b, 0px 0px 0px 10px #32445b;
+}
+
+
+
+table, th, td {
+    border: 1px solid #32445b;
+    border-collapse: collapse;
+    text-align: center;
+}
+table {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+tr th:nth-child(1) {
+    width: 60px;
+    text-align: center;
+    background-color: #496185;
+}
+th {
+    position: sticky;
+    top: 0;
+    background-color: #32445b;
+    color: white;
+}
+tr td:nth-child(1) {
+    color: white;
+    text-align: center;
+    background-color: #32445b;
+}

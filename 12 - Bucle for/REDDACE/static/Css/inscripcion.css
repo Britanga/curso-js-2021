@@ -1,0 +1,283 @@
+div.elcontenido {
+    display: grid;
+    grid-template-columns: 260px 340px;
+    grid-template-rows: 45px 500px;
+    grid-template-areas: "donde donde"
+                        "opcion tables" ;
+    justify-content: center;
+}
+
+#fechas1 , #fechas2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3 , 30px);
+    grid-template-areas: "in_d" "ed_d" "cu_d";
+    gap: 7px;
+    overflow: hidden;
+}
+#fechas1 label, #fechas2 label{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 80px;
+}
+.in_d >input,.ed_d >input,.cu_d >input{
+    margin-top: 0px !important;
+    width: 135px;
+    background-color: #50525557;
+    border-bottom: none;
+
+}
+#fechas1 > .in_d,#fechas2 > .in_d{
+grid-area: in_d;
+border-bottom: #32445b 1px solid;
+}
+#fechas1 > .ed_d,#fechas2 > .ed_d{
+grid-area: ed_d;
+border-bottom: #32445b 1px solid;
+
+}
+#fechas1 > .cu_d,#fechas2 > .cu_d{
+grid-area: cu_d;
+border-bottom: #32445b 1px solid;
+
+}
+
+
+.CLAVparte1{
+    grid-area: donde;
+    justify-self: center;
+    align-self: center;
+    font-family: PoppinsR; 
+    font-weight: 100;
+    text-align: center;
+}
+.CLAVparte2{ 
+    grid-area: opcion;
+}
+.CLAVparte3{
+    grid-area: tables;
+    box-shadow: 0px 0px -1px 10px #496185;
+}
+
+.CLAVparte2{
+    display: flex;
+    flex-flow: column nowrap;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+}
+    div.parre{
+        background-color:rgba(254, 254, 255, 0.863);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px ;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 255px;
+        grid-template-rows:  repeat(4,100px);
+        grid-template-areas:  "parteT1"
+                              "parteT2"
+                              "parteT3"
+                              "parteT4";
+        align-items: center;
+        overflow: hidden;
+    box-shadow: 0px 0px 0px 10px #32445b;
+
+    } 
+    .parteT1-CLA{
+        grid-area: parteT2;
+    }
+    .parteT2-CLA{
+        grid-area: parteT1;
+    }
+    .parteT3-CLA{
+        grid-area: parteT3;
+    }
+    .parteT4-CLA{
+        grid-area: parteT4;
+    }
+   
+    .col-lg-3 {
+    max-width: 255px !important;
+    padding-left: 5px !important;
+    padding-right: 10px !important;
+    }
+    .small-box {
+    box-shadow: 0 0 100px 0 rgba(14, 14, 31, 0.739) inset !important;
+    cursor: pointer;
+    border-radius: .25rem;
+    position: relative;
+    height: 90px;
+    }
+   
+    .small-box > .inner {
+    padding: 10px;
+    }
+
+    .small-box p {
+    z-index: 5;
+    margin: 0 0 10px 0;
+    }
+    .small-box .icon {
+    transition: all .4s linear;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 0;
+    font-size: 60px;
+    height: 100%;
+    color:#32445b;
+    }
+    .btn-primary {
+    color: #fff;
+    background-color: #32445b;
+    border-color: #32445b;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075);
+    transition: all 0.4s ease;
+    }
+    .btn-primary:hover{
+    transition: all 0.4s ease;
+    background-color:#496185 ;
+    }
+    .btn-primary:hover .icon{
+    transition: all 0.4s ease;
+    color:#496185 ;
+    }
+    .small-box:hover .icon {
+    font-size: 70px;
+    }
+    .box p {
+    z-index: 5;
+    }
+    .inner > p {
+    font-family: ROBOTO;
+    }
+    .algo {
+    color: black;
+    text-shadow: 2px 2px 2px aliceblue;
+    height: 50px;
+    overflow: hidden;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    }
+    .algo > p {
+    font-family: PoppinsR;
+    font-size: 30px;
+    margin: auto;
+    font-weight: 500;
+    }
+.CLAVparte3{
+    background-color: rgba(254, 254, 255, 0.863);
+    width: 100%;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px #32445b, 
+                0px 0px  0px 10px #32445b;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px ;
+}
+.CLAVparte3{
+    display: grid;
+    grid-template-rows: 400px 100px ;
+    grid-template-areas: "tablaCarrea" "boton_carrera";
+
+}
+.enviarQ >label >input[type="number"]
+{
+    width: 70px !important;
+    background-color: rgba(128, 128, 128, 0.486);
+    color: black;
+    font-family: ROBOTO;
+    border: 1px solid #32445b !important;
+    box-shadow: 0px 0px 10px 1px #32445b;
+    padding: 0;
+    margin: 0;
+    margin-top: 0px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-align: center;
+    height: 30px;
+}
+.enviar{
+    display: grid;
+    grid-template-rows: 1fr 35px;
+    grid-template-areas: "para_t" "btn4v";
+    padding-bottom: 2px;
+}
+.enviarQ{
+    grid-area: para_t;
+    justify-self: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+.enviarB{
+    grid-area: btn4v;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+div.scrol{
+    overflow-y: scroll;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px #32445b, 
+                0px 0px  0px 10px #32445b;
+                border-top-right-radius: 05px; 
+                border-bottom-right-radius: 05px;
+}
+
+table{
+    width: 100%;
+}
+
+tr:hover{
+    background-color: rgba(128, 128, 128, 0.288);
+    cursor: pointer;
+    }
+table, th, td{
+    border: 1px solid #32445b;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    position: sticky;
+    top: 0;
+    background-color: #32445b;
+    color: white;
+}
+th:nth-child(1){
+    width: 30px !important;
+    margin: 0;
+    padding: 0;
+    }
+th:nth-child(3){
+width: 70px !important;
+margin: 0;
+padding: 0;
+}
+th:nth-child(4){
+    width: 62px !important;
+    margin: 0;
+    padding: 0;
+    }
+td > input[type='number']{
+    width: 50px !important;
+    background-color: rgba(128, 128, 128, 0.486);
+    color: black;
+    font-family: ROBOTO;
+    border: 1px solid #32445b !important;
+    box-shadow: 0px 0px 10px 1px #32445b;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition:  all 0.5s ease;
+    text-align: center;
+}
+td > input:hover{
+   background-color: azure;
+   box-shadow: 0px 0px 10px 1px azure;
+
+}
+

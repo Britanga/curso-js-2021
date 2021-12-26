@@ -1,0 +1,49 @@
+.maguia-overlay {
+    position: relative !important;
+    background-color: transparent !important;
+}
+
+#Recork_Nota{
+ width: 100%;
+ display: flex; 
+ justify-content: center;
+ align-content: flex-start;
+ overflow: hidden;
+} 
+
+form#recork
+{
+    background-color: rgba(240, 248, 255, 0.26);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box; 
+    display: grid; 
+    max-width: 480px;
+    overflow: hidden;
+}
+        form#recork{
+                    grid-template-columns: 200px 200px;
+                    grid-template-rows:50px repeat(2,50px) 40px;
+                    grid-template-areas:"parte0 parte0"
+                                        "parte1 parte2"
+                                        "parte3 parte4"
+                                        "parte5 parte6 ";
+                                        justify-content: space-around;
+                                        gap: 16px
+                    }
+
+    b{ 
+    text-align: center;
+    font-family: Helvetica,sans-serif;
+    color: #496185 ;
+    font-size: 16px ;
+    }
+.OPC1parte0{   
+    grid-area: pNF;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+ }
+

@@ -1,0 +1,292 @@
+ .enjertopros{
+    background-color: rgb(251, 251, 251);
+     height: 100%;
+ }
+    form#solicitudparte{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        display: grid; 
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:70px 330px 40px;
+        grid-template-areas:"campo  campo  campo  campo"
+                            "conte  conte  conte  conte"
+                            "boton  boton  boton  boton ";
+                            
+        }
+        b{ 
+            text-align: center;
+            font-family: Helvetica,sans-serif;
+            color: #000000 ;
+            font-size: 16px ;
+            }
+.campo{   
+    grid-area: campo;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conte{   
+    grid-area: conte;
+}
+.botones{
+    grid-area: boton;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.campo > div{
+width: 16%;
+}.campo > div > .inp1{
+    width: 20%;
+    }
+.conte{
+display: grid;
+grid-template-columns: repeat(4,1fr) ;
+grid-template-rows:330px;
+grid-template-areas:"cont1 cont2 cont3 cont4";
+}
+.conte1{
+grid-area: cont1;
+display: grid;
+grid-template-columns: repeat(1,1fr) ;
+grid-template-rows:143px repeat(4, 60px) ;
+grid-template-areas:"acti1" 
+                    "grupo1"
+                    "participante"
+                    "grupo2";
+width: 100%;
+border-right: 1px solid #496185;
+/* border-bottom: 1px solid #fc0000; */
+}
+.conte1_1{
+    justify-self: center;
+    width: auto;
+    grid-area: acti1;
+}.conte1_1 > div >textarea{
+    max-width: 350px;
+    min-width: 250px;
+    max-height: 100px;
+    min-height: 100px;
+    overflow-y: scroll;
+    border:none;
+    border:1px solid lightslategray ;
+}
+.conte1_2{
+    grid-area: grupo1 ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.conte1_3{
+    grid-area: participante ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.conte1_4{
+    grid-area: grupo2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.conte2{
+    grid-area: cont2;
+    display: grid;
+    grid-template-columns: repeat(1,1fr) ;
+    grid-template-rows:143px repeat(4, 60px) ;
+    grid-template-areas:"acti4" 
+                        "grupo4"
+                        "participante4"
+                        "grupo40";
+    width: 100%;
+    border-right: 1px solid #496185;
+    }
+    .conte2_1{
+        justify-self: center;
+        width: auto;
+        grid-area: acti4;
+    }.conte2_1 > div >textarea{
+        max-width: 350px;
+        min-width: 250px;
+        max-height: 100px;
+        min-height: 100px;
+        overflow-y: scroll;
+        border:none;
+        border:1px solid lightslategray ;
+    }
+    .conte2_2{
+        grid-area: grupo4 ;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .conte2_3{
+        grid-area: participante4 ;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .conte2_4{
+        grid-area: grupo40;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .conte3{
+        grid-area: cont3;
+        display: grid;
+        grid-template-columns: repeat(1,1fr) ;
+        grid-template-rows:143px repeat(4, 60px) ;
+        grid-template-areas:"acti5" 
+                            "grupo5"
+                            "participante5"
+                            "grupo50";
+        width: 100%;
+        border-right: 1px solid #496185;
+        }
+        .conte3_1{
+            justify-self: center;
+            width: auto;
+            grid-area: acti5;
+        }.conte3_1 > div >textarea{
+            max-width: 350px;
+            min-width: 250px;
+            max-height: 100px;
+            min-height: 100px;
+            overflow-y: scroll;
+            border:none;
+            border:1px solid lightslategray ;
+        }
+        .conte3_2{
+            grid-area: grupo5 ;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .conte3_3{
+            grid-area: participante5 ;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .conte3_4{
+            grid-area: grupo50;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .conte4{
+            grid-area: cont4;
+            display: grid;
+            grid-template-columns: repeat(1,1fr) ;
+            grid-template-rows:143px repeat(4, 60px) ;
+            grid-template-areas:"acti6" 
+                                "grupo6"
+                                "participante6"
+                                "grupo60";
+            width: 100%;
+            border-right: 1px solid #496185;
+            }
+            .conte4_1{
+                justify-self: center;
+                width: auto;
+                grid-area: acti6;
+            }.conte4_1 > div >textarea{
+                max-width: 350px;
+                min-width: 250px;
+                max-height: 100px;
+                min-height: 100px;
+                overflow-y: scroll;
+                border:none;
+                border:1px solid lightslategray ;
+            }
+            .conte4_2{
+                grid-area: grupo6 ;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+            .conte4_3{
+                grid-area: participante6 ;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+            .conte4_4{
+                grid-area: grupo60;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+            }
+
+.grupo1> div >input,
+.grupo2> div >input,
+.grupo3> div >select,
+.grupo4> div >input,
+.grupo5> div >input,
+.grupo6> div >input{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 2px solid #496185;
+}.grupo3> div >select{
+    margin: 0 !important;
+}
+.grupo4{
+opacity: 0;
+}
+
+
+.boton
+{
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    max-height: 100%;
+    place-content: stretch center;
+    align-items: stretch;
+    padding: 2px 25px;
+    margin: 0;
+    font-size: 16px;
+    text-align: center ;
+    cursor: pointer;
+    outline: 0;
+    color: #fff ;
+    background-color: #32445b ;
+    border: none;
+    border-radius: 15px ;
+    max-width: 133px;
+    min-width: 133px;
+    font-weight: 700 ;
+    line-height: 30px;
+    transition: all 0.4s ease;
+}.mat-raised-button[disabled]{cursor: no-drop;            } 
+ .efecto-btn-1:hover         {background-color: #496185;} 
+.robo
+{ 
+            margin-top: -45px; 
+            border: none; border-bottom:  2px solid #496185 ; 
+            width: 100%;
+            height: 30px;
+            font-family: ROBOTO;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size: 17px;
+            color: rgb(92, 92, 92);
+}
+
+.conte1{ background-color:#2196f3;}
+.conte2{ background-color:#ff9800;}
+.conte3{ background-color:#2196f3;}
+.conte4{ background-color:#ff9800;}

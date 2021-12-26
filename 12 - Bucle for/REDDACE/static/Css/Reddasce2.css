@@ -1,0 +1,341 @@
+.navbar
+{
+    
+    background-color: rgba(255, 255, 255, 0.157);
+    transition: all 0.3s;
+ 
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255, 255, 255);
+    
+    background-color:   #34A853;
+    box-shadow: 1px 3px 8px  rgba(3, 126, 24, 0.74);
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    }
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #FFF;
+
+}
+.navbar-light .navbar-nav .nav-link
+ {
+    color: rgb(0, 0, 0);
+    font-size: 1rem; 
+    font-family: 'ROBOTO';
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+   
+    color: rgb(255, 255, 255);
+    background-color:   #34A853;
+    box-shadow: 1px 3px 8px  rgba(3, 126, 24, 0.74);
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0);
+    font-size: 1.5rem; 
+    font-family: 'ROBOTO';
+}
+
+
+/* para el lado de la ayudad */
+#AYUDA{
+    height: 100vh;
+}
+#AYUDA .container-fluid{
+    padding-top: 7rem;
+    position: relative;
+    /* background-image: url(../Img/login/6-2.jpg); */
+    background-image: url(../Img/6-1.jpg);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+.container-fluid form
+{
+    position: relative;
+    z-index: 1000;
+}
+.container-fluid .form-control
+{
+    background: white;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    height: 50px;
+    border-radius: 0;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+.container-fluid .form-control:focus,
+.container-fluid .form-control:hover
+{
+    border: none;
+    border-bottom: 2px solid rgb(195, 165, 29);
+    box-shadow: none;
+}
+.headerText{
+    color: #000000;
+}
+.contact-fluid .textarea
+{
+    
+    min-height: 100px;
+}
+.form-group label{
+    color: #000000;
+    font-size: 1.25rem;
+}
+
+/* para el pis */
+footer{
+    background-color: transparent;
+    padding: 50px 0 0;
+}
+.sci{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li {
+    list-style: none;
+    margin: 0 20px;
+}
+.sci li a{
+    color: #FFF;
+    font-size: 2rem;
+    transition: 0.5s;
+    text-decoration: none;
+    
+}
+.sci li#itent1 a:hover{
+    color: rgb(255, 81, 0);
+    
+}
+.sci li#itent2 a:hover{
+    color: rgb(102, 255, 0);
+}
+.sci li#itent3 a:hover{
+    color: rgb(250, 17, 17);
+}
+.sci li#itent4 a:hover{
+    color: rgb(25, 28, 216);
+}
+.cpryt{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.cpryt a,
+.cpryt a:hover{
+    color: #FFF;
+}
+
+/* las cartas */
+
+.heading{
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 2em !important;
+    text-align: center;
+    position: relative;
+    align-content: space-around;
+    justify-content: space-around;
+    
+}
+.heading::after{
+    content: "";
+    width: 15%;
+    height: .4rem;
+    background-color: #BAD531;
+    position: absolute;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+.container-2{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px repeat(2, 1fr);
+    grid-template-areas: "Desarrollo    Desarrollo    Desarrollo"
+                         "Team1           Team1         Team1   "
+                         "Team2           Team2         Team2   ";
+}
+
+.card1{
+    grid-area: Desarrollo;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.card2{
+    grid-area: Team1;
+}
+.card3{
+    grid-area: Team2;
+}
+
+.card-wrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: space-around;
+  
+}
+.my-card{
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    border-top-left-radius: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    animation: bonito 2s linear infinite;
+    overflow: hidden;
+    position: relative;
+}
+.my-card:before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -50;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    transform: skewX(-23deg);
+    background-color: rgba(255, 255, 255, 0.349)
+}
+
+.my-card .my-card-img{
+    border-top-right-radius:15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0 , 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0 , 100% 0, 100% 78%, 0% 100%);
+}
+.profile-img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -6rem;
+    z-index: 999;
+    border: 6px solid #ebeef8;
+    
+}
+
+
+.my-card h1{
+    font-size: 15px;
+    color: black;
+    /* margin: 1.5rem 0; */
+}
+.job-title{
+    color: black !important;
+    font-family: ROBOTO !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    margin-bottom: 5px;
+    padding-top: 0;
+}
+.about{
+    font-size: 12px !important;
+    
+    text-align: justify !important;
+    padding: 0px 7px; 
+    color: black !important;
+    font-weight: bold;
+    font-family: ROBOTO;
+    margin-bottom: 5px;
+}
+
+
+#posision {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap !important;
+    justify-content: space-around;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    padding: 5px 20px 5px 20px;
+ 
+    border-top: 1px solid rgba(0,0,0,.1);
+   
+    
+}
+#posision i{
+    font-size: 2rem;
+    list-style: none !important;
+    text-decoration: none !important;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    z-index: 9999999 !important;
+}
+.fa-facebook-square{
+    color: #3b5999;
+}
+
+
+.fa-google-plus-square{
+ color: #dd4b39;
+
+}
+
+.fa-facebook-square:hover{
+    transition: all .5s;
+    color: #1645aa;
+
+}
+.fa-google-plus-square:hover{
+    transition: all .5s;
+    color: #D40023;
+
+} 
+
+.oscar{
+    background: #BAD531 url(../Animation/sparkles.png);;
+}
+.Dany, .Luis{
+    background: #F7B518 url(../Animation/sparkles.png);;
+}
+.Jean, .Javi{
+    background: #03A9F4 url(../Animation/sparkles.png);;
+}
+.my-card{
+        
+    transition: transform .5s;
+}
+/* .my-card:hover{
+    transform: scale(1.05);
+    
+}  */
+@keyframes bonito{
+    0%{
+        background-position:  0 0;
+    }
+    100%{
+        background-position: 0 -64px;
+    }
+}
+@media screen and (max-width: 700px){
+.no-movil{
+    display: none;
+}
+
+}

@@ -1,0 +1,159 @@
+#DASCE{
+    /* patron */
+ 
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+
+.dasce-grid{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 35% repeat(2, 50%) 15%;
+    grid-template-areas: "reseña    reseña      reseña"
+                         "logo     contenido    dibujo"
+                         "logo     contenido    dibujo"
+                         "pies       pies        pies";
+    
+}
+.dasce-heder{
+    background-color: rgba(0, 0, 0, 0.829);
+ 
+     /* background-color: #023672; */
+    grid-area: reseña; 
+}
+
+.dasce-opc{
+    grid-area: logo;
+    background: url(../Img/6.jpg);
+    
+    background-position:center;
+    z-index: 1; 
+    color: #FFF;
+}
+.dasce-des{
+   
+    grid-area: contenido;
+    /* box-shadow:  0px 0px 10px  rgba(0, 0, 0, 0.685); */
+    z-index: 1000;
+    background-image: url(../Img/6-3.jpg);
+    background-position:center;
+    
+   
+}
+.dasce-img{
+    grid-area: dibujo;
+    
+}
+.dasce-opc,
+.dasce-des,
+.dasce-img{
+    height: 500px;
+}
+.dasce-pis{
+    height: 100%;
+    grid-area: pies;
+}
+
+.dasce-heder >
+.inputs{
+display: flex;
+flex-flow: row-reverse wrap;
+justify-content: center;
+padding: 30px 10px;
+}
+.dasce-heder >
+.inputs> input{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+    min-width: 125px;
+    max-width: 125px;
+
+}
+
+.dasce-heder >
+.inputs> input:hover{
+    background: white;
+    color: black;
+}
+
+.dasce-heder  h2{
+    color: rgb(255, 255, 255);
+    padding: 30px 10px;
+    font-family: ROBOTO;
+    font-size: 45px;
+}
+.dasce-opc {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4, auto);
+
+}
+
+.dasce-opc > .ing {
+width: 100%;
+/* background-color: aqua;     */
+display: flex;
+justify-content: center;
+align-items: center;
+justify-items: center;
+align-content: center;
+}
+.dasce-opc > .ing > img {
+height: 250px;
+margin-top: -25px;
+}
+.dasce-opc h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "PoppinsBol";
+}
+.dasce-opc p {
+    display: flex;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.dasce-opc strong {
+    display: flex;
+    justify-content: center;
+  
+}
+.dasce-des p{
+ 
+ justify-content: center;
+ text-align: justify;
+ padding: 50px 50px ;
+ font-family:  PoppinsR;
+ font-size: 16px;
+ color: #FFF;
+ /* background-color: #1c202541; */
+ height: 100%;
+}
+
+.dasce-img{
+    background-image: url(../Img/3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dasce-pis{
+display: flex;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.829);
+color: #FFF;
+padding: 13px 20px 0px 20px;
+align-content: center;
+justify-items: center;
+align-items: center;
+}

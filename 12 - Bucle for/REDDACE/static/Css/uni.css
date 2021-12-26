@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif,arial;
+}
+
+#img1{
+	width: 100%;
+	height: 100%;
+	
+position: relative;
+}
+
+#grid {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #5091DD 0%, #030617 100%);
+    background-repeat:no-repeat;
+  }
+  
+
+
+
+
+
+
+
+header{
+    width: 100%;
+    height: 60px;
+    /* background: #000; */
+    background-color: transparent;
+}
+
+.container-header{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.logo-title{
+    display: flex;
+}
+
+.logo-title img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo-title h4{
+    color: white;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.icon-menu{
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.icon-menu:hover{
+    background: deepskyblue;
+}
+
+
+
+
+.container-portada{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-image:url(../Img/6.jpg); 
+    background-size: 200%;
+    /* animation: movimiento 50s infinite linear alternate;   */
+}
+
+/* @keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+} */
+
+
+.capa-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.5;
+}
+
+.container-details{
+    width: 100%;
+    position: relative;
+    margin: auto;
+ 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    color: white;
+}
+
+.details h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+#boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+ #boton:hover{
+    background: white;
+    color: black;
+}
+
+
+
+/*TEXTO CENTRAL*/
+
+.contenedor {
+    padding-top: -1px;
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+
+
+.texto {
+    color:orange;
+    position:relative;
+    padding:200px 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.texto h2, .texto p {
+    background: rgba(0,0,0,.8);
+    display:inline-block;
+    padding:10px 20px;
+}
+
+.texto h2 {
+    font-size:40px;
+    letter-spacing: 2.5px;
+    font-weight: normal;
+
+}
+
+.texto p {
+    font-size:20px;
+    letter-spacing: 2.5px;
+}
+
+.principal {
+    position:relative;
+    color:#000;
+}
+
+.principal article {
+    padding:20px;
+    background:#fff;
+    margin-bottom: 20px;
+}
+
+.principal article p {
+    margin-bottom: 20px;
+    line-height:24px;
+    font-family:helvetica, arial, sans-serif;
+}
+
+.principal article .fecha {
+    color: #939393;
+}
+
+footer{
+	text-align: center;
+	display: flex;
+	margin: auto;
+	width: auto;
+	
+	align-content: center;
+	align-items: center;
+	
+}
+#finn{
+    color: white;
+	text-align: center;
+	display: flex;
+	margin-top: 10px;
+	width: 99%;
+}
+#roker{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 5rem;
+    width: 7%;
+    height: 7%;
+}
+
+#roker:hover{
+    box-shadow:  0 0 100px #fff ;
+    transform: scale(.95);
+    transition: all 0.555s;
+}
+#pon1{
+color: black;
+font-family: ROBOTO;
+}

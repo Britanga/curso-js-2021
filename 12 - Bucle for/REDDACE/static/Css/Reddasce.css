@@ -1,0 +1,89 @@
+/* para el lado del logo */
+#REDDASCE{
+    background-image: url(../Img/6-1.jpg);
+}
+.h100
+{
+    height: 100%;
+}
+.contentBox
+{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    z-index: 10;
+}
+
+    
+  
+
+
+.ventajas-deventajas{
+display: grid;
+grid-template-columns: 22% 22% 22%;
+grid-template-rows: minmax(auto, auto )  minmax(200px, auto );
+grid-template-areas: "logo        logo         logo"
+                     "ventaja    isotipo    desventaja";
+width: 100%;
+justify-content: center;
+}
+
+.vd-1{
+    background-color: transparent;
+    grid-area: logo;
+    width: 800px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    justify-self: center;
+}
+
+.vd-2 > p, .vd-4 >p{
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 10px #000;
+}
+.contnido-tex{
+   padding: 2px 10px 2px 10px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: justify;
+}
+.vd-2, .vd-4{
+    grid-area: ventaja;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.561) ,
+               -1px 1px 5px rgba(255, 255, 255, 0.561) ;
+}
+.vd-2 >ul >li{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px 5px 2px 20px;
+    list-style-type: none;
+   
+
+}
+.creado-por{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+}
+.vd-3{
+    grid-area: isotipo;
+}
+
+.vd-4{
+    grid-area: desventaja;
+}
